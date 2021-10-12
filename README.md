@@ -1,4 +1,4 @@
-+## Kötü Söz Api Dökümantasyon
+## Kötü Söz Api Dökümantasyon
 
  **Rotalar**
  
