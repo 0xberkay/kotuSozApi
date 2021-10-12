@@ -10,32 +10,32 @@
 ## 127.0.0.1:3000/api/check
 
 **İstek :**
-{
-"str":"cok kotu bir soz"
+{<br>
+"str":"cok kotu bir soz"<br>
 }
 
 **Cevap:**
-{
+{<br>
 "count": 4,
-"message": "Kotu soz bulundu",
-"status": "success"
+"message": "Kotu soz bulundu",<br>
+"status": "success"<br>
 }
 ## 127.0.0.1:3000/api/filter
 **İstek :** 
-{
-"str":"iyi bir soz kotu bir soz",
-"filter":"***"
+{<br>
+"str":"iyi bir soz kotu bir soz",<br>
+"filter":"***"<br>
 }
 
 **Cevap:**
-{
-"message": "iyi bir soz *** *** ***",
-"status": "success"
+{<br>
+"message": "iyi bir soz *** *** ***",<br>
+"status": "success"<br>
 }
 
 ##
-str : Gönderilen mesaj
-filter: Kötü sözle değiştirilecek filtre
-message: Geriye dönen mesaj
-status: Test edilme durumu
+str : Gönderilen mesaj<br>
+filter: Kötü sözle değiştirilecek filtre<br>
+message: Geriye dönen mesaj<br>
+status: Test edilme durumu<br>
 cout: Kötü kelime sayısı
