@@ -14,20 +14,20 @@
 "str":"cok kotu bir soz"<br>
 }
 
-**Cevap:**
+**Cevap:**<br>
 {<br>
 "count": 4,
 "message": "Kotu soz bulundu",<br>
 "status": "success"<br>
 }
 ## 127.0.0.1:3000/api/filter
-**İstek :** 
+**İstek :** <br>
 {<br>
 "str":"iyi bir soz kotu bir soz",<br>
 "filter":"***"<br>
 }
 
-**Cevap:**
+**Cevap:**<br>
 {<br>
 "message": "iyi bir soz *** *** ***",<br>
 "status": "success"<br>
