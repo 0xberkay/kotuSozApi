@@ -9,7 +9,7 @@
 
 ## 127.0.0.1:3000/api/check
 
-**İstek :**
+**İstek :**<br>
 {<br>
 "str":"cok kotu bir soz"<br>
 }
