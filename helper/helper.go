@@ -24,7 +24,7 @@ func KotuSozCheck(c *fiber.Ctx) error {
 	for i := 0; i < loopStreak; i++ {
 		if split[i] != " " && split[i] != "" && split[i] != "  " {
 			database.DB.Table("tlbs").Find(&kotusoz, "kotusoz = ?", split[i])
-			if len(kotusoz.Kotusoz) != 0 {
+			if kotusoz.Kotusoz != "" {
 				cout++
 			} else {
 				if i+1 < loopStreak {
@@ -32,7 +32,7 @@ func KotuSozCheck(c *fiber.Ctx) error {
 
 					database.DB.Find(&kotusoz, "kotusoz = ?", multiString)
 				}
-				if len(kotusoz.Kotusoz) != 0 {
+				if kotusoz.Kotusoz != "" {
 					cout++
 				}
 			}
@@ -65,7 +65,7 @@ func KotuSozFilter(c *fiber.Ctx) error {
 	for i := 0; i < loopStreak; i++ {
 		if split[i] != " " && split[i] != "" && split[i] != "  " {
 			database.DB.Find(&kotusoz, "kotusoz = ?", split[i])
-			if len(kotusoz.Kotusoz) != 0 {
+			if kotusoz.Kotusoz != "" {
 				split[i] = filterValue
 			} else {
 				if i+1 < loopStreak {
@@ -73,7 +73,7 @@ func KotuSozFilter(c *fiber.Ctx) error {
 
 					database.DB.Find(&kotusoz, "kotusoz = ?", multiString)
 				}
-				if len(kotusoz.Kotusoz) != 0 {
+				if kotusoz.Kotusoz != "" {
 					split[i] = filterValue
 					split[i+1] = filterValue
 				}
